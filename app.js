@@ -37,6 +37,9 @@ async function loadTeams() {
   }
   return data.teams.map((t, i) => ({
     name: str(t && t.team) || `Team ${i + 1}`,
+    pm: str(t && t.pm),
+    mentor: str(t && t.mentor),
+    building: str(t && t.building),
     members: (Array.isArray(t && t.members) ? t.members : []).map(str).filter(Boolean),
   }));
 }
@@ -56,10 +59,25 @@ function initials(name) {
   return name.split(/\s+/).filter(Boolean).slice(0, 2).map(p => p[0].toUpperCase()).join('');
 }
 
+function renderLead(label, name) {
+  const tile = el('div', 'lead');
+  tile.append(el('span', 'lead-label', label));
+  if (name) {
+    const who = el('div', 'lead-person');
+    const nameEl = el('span', 'lead-name searchable', name);
+    nameEl.dataset.name = name;
+    who.append(el('span', 'avatar avatar-sm', initials(name)), nameEl);
+    tile.append(who);
+  } else {
+    tile.append(el('span', 'placeholder', 'To be assigned'));
+  }
+  return tile;
+}
+
 function render(teams) {
   teamsEl.replaceChildren();
 
-  const people = teams.reduce((n, t) => n + t.members.length, 0);
+  const people = new Set(teams.flatMap(t => [t.pm, t.mentor, ...t.members].filter(Boolean))).size;
   statsEl.textContent = `${teams.length} teams \u00b7 ${people} people`;
 
   teams.forEach((team, i) => {
@@ -76,15 +94,27 @@ function render(teams) {
       el('span', 'team-count', `${team.members.length} ${team.members.length === 1 ? 'member' : 'members'}`),
     );
 
+    const building = el('div', 'building');
+    building.append(
+      el('span', 'section-label', "What we're building"),
+      team.building ? el('p', 'building-text', team.building) : el('p', 'placeholder', 'To be announced'),
+    );
+
+    const leads = el('div', 'leads');
+    leads.append(renderLead('PM', team.pm), renderLead('Mentor', team.mentor));
+
     const list = el('ul', 'members');
     team.members.forEach(name => {
       const li = el('li', 'member');
-      li.dataset.name = name;
-      li.append(el('span', 'avatar', initials(name)), el('span', 'member-name', name));
+      const nameEl = el('span', 'member-name searchable', name);
+      nameEl.dataset.name = name;
+      li.append(el('span', 'avatar', initials(name)), nameEl);
       list.append(li);
     });
 
-    section.append(header, list);
+    const body = el('div', 'team-body');
+    body.append(building, leads, el('span', 'section-label members-label', 'Members'), list);
+    section.append(header, body);
     teamsEl.append(section);
   });
 
@@ -97,13 +127,15 @@ function applySearch() {
 
   teamsEl.querySelectorAll('.team').forEach(section => {
     let matches = 0;
-    section.querySelectorAll('.member').forEach(li => {
-      const show = !q || li.dataset.name.toLowerCase().includes(q);
-      li.hidden = !show;
-      highlight(li.querySelector('.member-name'), li.dataset.name, show ? q : '');
-      if (show) matches++;
+    section.querySelectorAll('.searchable').forEach(nameEl => {
+      const hit = !q || nameEl.dataset.name.toLowerCase().includes(q);
+      highlight(nameEl, nameEl.dataset.name, hit ? q : '');
+      const li = nameEl.closest('.member');
+      if (li) li.hidden = !hit;
+      if (hit) matches++;
     });
     section.hidden = q && matches === 0;
+    section.querySelector('.members-label').hidden = !section.querySelector('.member:not([hidden])');
     if (!section.hidden) anyVisible = true;
   });
 

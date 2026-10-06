@@ -189,19 +189,97 @@ body {
   background: rgba(255, 255, 255, 0.25);
 }
 
+/* ---------- Card body ---------- */
+
+.team-body {
+  padding: 16px 16px 10px;
+}
+
+.section-label {
+  display: block;
+  margin: 0 0 6px 2px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.building {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border-left: 4px solid var(--c1);
+  background: #f8f9fc;
+}
+
+.building .section-label {
+  margin-left: 0;
+}
+
+.building-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.placeholder {
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #9ca3af;
+}
+
+.leads {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 12px 0 16px;
+}
+
+.lead {
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #eceef4;
+  border-radius: 12px;
+}
+
+.lead-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c1);
+}
+
+.lead-person {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.lead-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
 /* ---------- Members ---------- */
 
 .members {
   list-style: none;
   margin: 0;
-  padding: 8px;
+  padding: 0 0 4px;
 }
 
 .member {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 9px 10px;
+  padding: 8px 6px;
   border-radius: 12px;
   transition: background 0.15s;
 }
@@ -222,6 +300,12 @@ body {
   color: #fff;
   background: linear-gradient(135deg, var(--c1), var(--c2));
   box-shadow: 0 3px 8px rgba(30, 27, 75, 0.15);
+}
+
+.avatar-sm {
+  width: 28px;
+  height: 28px;
+  font-size: 0.7rem;
 }
 
 .member-name {

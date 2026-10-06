@@ -7,43 +7,66 @@
 #    2. Change team names or people below.
 #    3. Click "Commit changes". The page updates in a minute or two.
 #
-#  TO RENAME A TEAM:  change the text after "team:"
-#  TO ADD A PERSON:   add a new line under the team:  "      - Their Name"
+#  TO RENAME A TEAM:   change the text after "team:"
+#  PM / MENTOR:        type the name after "pm:" or "mentor:"
+#  WHAT WE'RE BUILDING: type a short sentence after "building:"
+#                      (leave any of these empty and the page shows
+#                       "To be assigned" / "To be announced")
+#  TO ADD A PERSON:    add a new line under members:  "      - Their Name"
 #  TO REMOVE A PERSON: delete their line.
 #
 #  RULES:
 #    - Use SPACES, never tabs. Keep the spacing as it is.
+#    - If your text contains a colon (:), put the text in "double quotes".
 #    - Lines starting with # are notes and are ignored.
 # =====================================================================
 
 teams:
 
   - team: Team One
+    pm: Someone
+    mentor: Someoneelse
+    building: A scalable template driven warehouse system
     members:
       - Kalli
       - Vinoth
 
   - team: Team Two
+    pm:
+    mentor:
+    building:
     members:
       - Bhuvana
       - Muthu
 
   - team: Team Three
+    pm:
+    mentor:
+    building:
     members:
       - Callum
       - Veera
 
   - team: Team Four
+    pm:
+    mentor:
+    building:
     members:
       - Sandhya
       - Suyash
 
   - team: Team Five
+    pm:
+    mentor:
+    building:
     members:
       - Saravanan
       - Gowthaman
 
   - team: Team Six
+    pm:
+    mentor:
+    building:
     members:
       - Bogesh
       - Manoj
