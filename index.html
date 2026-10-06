@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#312e81">
+  <title>Know Your Team</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Know Your Team</h1>
+    <p id="stats" class="stats"></p>
+    <label class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="search" class="search" type="search" placeholder="Search your name..." aria-label="Search by name" autocomplete="off">
+    </label>
+  </header>
+
+  <main id="teams" class="teams">
+    <p class="status">Loading...</p>
+  </main>
+
+  <script src="lib/js-yaml.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

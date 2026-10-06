@@ -1,0 +1,49 @@
+# =====================================================================
+#  KNOW YOUR TEAM - edit this file to update the page
+# =====================================================================
+#
+#  HOW TO EDIT (on GitHub):
+#    1. Click the pencil icon (Edit) on this file.
+#    2. Change team names or people below.
+#    3. Click "Commit changes". The page updates in a minute or two.
+#
+#  TO RENAME A TEAM:  change the text after "team:"
+#  TO ADD A PERSON:   add a new line under the team:  "      - Their Name"
+#  TO REMOVE A PERSON: delete their line.
+#
+#  RULES:
+#    - Use SPACES, never tabs. Keep the spacing as it is.
+#    - Lines starting with # are notes and are ignored.
+# =====================================================================
+
+teams:
+
+  - team: Team One
+    members:
+      - Kalli
+      - Vinoth
+
+  - team: Team Two
+    members:
+      - Bhuvana
+      - Muthu
+
+  - team: Team Three
+    members:
+      - Callum
+      - Veera
+
+  - team: Team Four
+    members:
+      - Sandhya
+      - Suyash
+
+  - team: Team Five
+    members:
+      - Saravanan
+      - Gowthaman
+
+  - team: Team Six
+    members:
+      - Bogesh
+      - Manoj
