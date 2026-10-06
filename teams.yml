@@ -24,49 +24,99 @@
 teams:
 
   - team: Team One
-    pm: Someone
-    mentor: Someoneelse
-    building: A scalable template driven warehouse system
+    pm: TBC
+    mentor: TBC
+    building: TBC
     members:
-      - Kalli
-      - Vinoth
+      - RameshKrishnan Nallavedi
+      - Vivek Mehra
+      - Subbulakshmi Adhisivan
+      - Rishikesh V
+      - Kathiravan P
+      - Sakthimani Natarajan
+      - Kirtivas Sridharan
+      - Gnaneshwar
+      - Radhika Gurunathan
+      - Krishna Priya R S
 
   - team: Team Two
-    pm:
-    mentor:
-    building:
+    pm: TBC
+    mentor: TBC
+    building: TBC
     members:
-      - Bhuvana
-      - Muthu
+      - Vibasini S
+      - Sathishkumar V
+      - Aavudai Nadarajan
+      - Sabari G
+      - Ramya L
+      - Deepika Karunamoorthy
+      - Anandh M
+      - Krishna Chaithanya Adigopula
+      - Malini Mani
+      - Nithin Kumar
 
   - team: Team Three
-    pm:
-    mentor:
-    building:
+    pm: TBC
+    mentor: TBC
+    building: TBC
     members:
-      - Callum
-      - Veera
+      - Veeramani
+      - Saravanan J
+      - Rekha B
+      - Charumathy G
+      - Selvamani G
+      - Abhilipsa Bahali
+      - Pavithra Jayapalan
+      - Sanjay
+      - Naveen Bari
+      - Akashkanna
 
   - team: Team Four
-    pm:
-    mentor:
-    building:
+    pm: TBC
+    mentor: TBC
+    building: TBC
     members:
-      - Sandhya
-      - Suyash
+      - Sasikala G
+      - Sumanta Bhattacharjee
+      - Pradeep Rathinam
+      - Sai Chandra
+      - Bogeshwarao
+      - Arun Pathrose
+      - Nagavishnu
+      - Leakhaa
+      - Vino Sanjay
+      - Manoj P
 
   - team: Team Five
-    pm:
-    mentor:
-    building:
+    pm: TBC
+    mentor: TBC
+    building: TBC
     members:
-      - Saravanan
-      - Gowthaman
+      - Noorul Ameen
+      - Veerakumar A
+      - Arockiaraj S
+      - Gowthaman T
+      - Tharun K
+      - Theresa Tummala
+      - Rohith M U
+      - Prakash Pandey
+      - Lahari B
+      - Lahari Lakshmi
+      - Kumaresan T
 
   - team: Team Six
-    pm:
-    mentor:
-    building:
+    pm: TBC
+    mentor: TBC
+    building: TBC
     members:
-      - Bogesh
-      - Manoj
+      - Hariprasad TJ
+      - Suyash
+      - Subbulakshmi Sivasankaran
+      - Ranjith
+      - Yogeshwari
+      - Subair
+      - Adhithiyan Srinivasan
+      - Rathish
+      - Jagadeeshwaran B
+      - Kowshika
+      - Ashwin
