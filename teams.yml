@@ -24,9 +24,9 @@
 teams:
 
   - team: Team One
-    pm: TBC
+    pm: Zoe
     mentor: Krishnan
-    building: TBC
+    building: Why is performance moving the way it is
     members:
       - RameshKrishnan Nallavedi
       - Vivek Mehra
@@ -41,9 +41,9 @@ teams:
 
 
   - team: Team Two
-    pm: TBC
+    pm: Zoe
     mentor: Sian
-    building: TBC
+    building: Why is performance moving the way it is
     members:
       - Vibasini S
       - Sathishkumar V
@@ -58,9 +58,9 @@ teams:
       - Krishna Priya R S      
 
   - team: Team Three
-    pm: TBC
+    pm: Clare H
     mentor: Graeme
-    building: TBC
+    building: Help me Help the customer right now
     members:
       - Veeramani
       - Saravanan J
@@ -73,9 +73,9 @@ teams:
       - Hariharan
 
   - team: Team Four
-    pm: TBC
+    pm: Clare H
     mentor: Kristian
-    building: TBC
+    building: Help me Help the customer right now
     members:
       - Sasikala G
       - Sumanta Bhattacharjee
@@ -89,9 +89,9 @@ teams:
       - Manoj P
 
   - team: Team Five
-    pm: TBC
+    pm: Richard B
     mentor: Callum
-    building: TBC
+    building: Plan my occassion, not my shopping list
     members:
       - Noorul Ameen
       - Veerakumar A
@@ -106,9 +106,9 @@ teams:
       - Kumaresan T
 
   - team: Team Six
-    pm: TBC
+    pm: Richard B
     mentor: Sandhya
-    building: TBC
+    building: Plan my occassion, not my shopping list
     members:
       - Hariprasad TJ
       - Suyash
