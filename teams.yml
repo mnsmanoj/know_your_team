@@ -25,7 +25,7 @@ teams:
 
   - team: Team One
     pm: TBC
-    mentor: TBC
+    mentor: Krishnan
     building: TBC
     members:
       - RameshKrishnan Nallavedi
@@ -42,7 +42,7 @@ teams:
 
   - team: Team Two
     pm: TBC
-    mentor: TBC
+    mentor: Sian
     building: TBC
     members:
       - Vibasini S
@@ -59,7 +59,7 @@ teams:
 
   - team: Team Three
     pm: TBC
-    mentor: TBC
+    mentor: Graeme
     building: TBC
     members:
       - Veeramani
@@ -74,7 +74,7 @@ teams:
 
   - team: Team Four
     pm: TBC
-    mentor: TBC
+    mentor: Kristian
     building: TBC
     members:
       - Sasikala G
@@ -90,7 +90,7 @@ teams:
 
   - team: Team Five
     pm: TBC
-    mentor: TBC
+    mentor: Callum
     building: TBC
     members:
       - Noorul Ameen
@@ -107,7 +107,7 @@ teams:
 
   - team: Team Six
     pm: TBC
-    mentor: TBC
+    mentor: Sandhya
     building: TBC
     members:
       - Hariprasad TJ
